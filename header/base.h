@@ -11,7 +11,7 @@ class Base
 		string name;
 
 	public:
-		virtual display(int tabs) = 0;
+		virtual void display(int tabs) = 0;
 };
 
 class Management : public Base
@@ -51,5 +51,7 @@ class Intern: public Base
 
 	public:
 		void display (int tabs = 0);
-}
+};
+
+#endif
 		
